@@ -1,0 +1,22 @@
+# python-assignment4
+
+Problem 1 
+This problem was asked by Quora. 
+You are given a list of (website, user) pairs that represent users visiting websites. Come up with a program that identifies the top k pairs of websites with the greatest similarity. 
+For example, suppose k = 1, and the list of tuples is: 
+[('a', 1), ('a', 3), ('a', 5),  ('b', 2), ('b', 6),  ('c', 1), ('c', 2), ('c', 3), ('c', 4), ('c', 5)  ('d', 4), ('d', 5), ('d', 6), ('d', 7),  ('e', 1), ('e', 3), ('e': 5), ('e', 6)] 
+Then a reasonable similarity metric would most likely conclude that a and e are the most similar, so your program should return [('a', 'e')]. 
+ 
+Problem 2 
+This problem was asked by Stripe. 
+Write a function to flatten a nested dictionary. Namespace the keys with a period. 
+For example, given the following dictionary: 
+{     "key": 3,     "foo": {         "a": 5,         "bar": {             "baz": 8         }     } } 
+it should become: 
+{     "key": 3,     "foo.a": 5,     "foo.bar.baz": 8 } 
+You can assume keys do not contain dots in them, i.e. no clobbering will occur. 
+ 
+Problem 3 
+This problem was asked by Twitter. 
+Implement an autocomplete system. That is, given a query string s and a set of all possible query strings, return all strings in the set that have s as a prefix. 
+For example, given the query string de and the set of strings [dog, deer, deal], return [deer, deal]. 
